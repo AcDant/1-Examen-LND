@@ -1,0 +1,231 @@
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 62.5%; /* Esto es para que 1 rem en vez de ser 16 px, sean 10px, facilita la conversión rápida */
+    box-sizing: border-box;
+  }
+  
+  * {
+    list-style: none;
+  }
+
+:root {
+    --grey: #efefefef;
+    --blanco: #fff;
+    --purpura: rgb(63, 2, 63);
+    --verde: rgb(3, 247, 36);
+    --negro: black;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10rem;
+    background-color: var(--purpura);
+    color: var(--blanco);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2.5rem 2rem;
+}
+
+.top a{
+    color: var(--blanco);
+    text-decoration: underline;
+    text-decoration-color: var(--verde);
+    font-size: 1.5rem;
+}
+
+.hero h1{
+    /* border: red solid 2px; */
+    width: 90%;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.hero span{
+    text-decoration: underline;
+    text-decoration-color: var(--verde);
+}
+
+.hero button{
+    outline: none;
+    border: none;
+    padding: 1.5rem;
+    color: var(--negro);
+    font-weight: bolder;
+    background-color: var(--verde);
+    margin-bottom: 1rem;
+}
+
+.papi-papi{
+    /* height: 10rem; */
+    /* height: 15rem; */
+    /* border: solid red 2px; */
+}
+
+.papi-mov{
+    /* position: absolute; */
+    /* position: relative; */
+    /* border: solid green 2px; */
+    /* width: 10rem; */
+    /* height: 10rem; */
+}
+
+.movil{
+    /* position: relative; */
+    /* position: absolute; */
+    /* border-right: 30rem;
+    margin-right: 40rem; */
+    background-image: url("./assets/images/image-hero.webp");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+    /* background-color: red; */
+    height: 10rem;
+    /* width: 60rem; */
+    margin-bottom: 6rem;
+}
+
+.cuer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
+}
+
+.points{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    
+    /* text-align: center; */
+}
+
+.numero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    border: 1px solid var(--purpura);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.numero h3{
+    font-size: 1.5rem;
+}
+
+.titu{
+    font-size: 2.5rem;
+}
+
+.points p{
+    width: 90%;
+    font-size: 1.8rem;
+    text-align: center;
+    /* border: solid red 2px; */
+}
+
+
+.foot{
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5.5rem;
+}
+
+.autor{
+    background-image: url(./assets/images/image-founder.webp);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+    height: 20rem;
+    width: 20rem;
+}
+
+.conte-foot{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    background-color: var(--purpura);
+    color: var(--blanco);
+    justify-content: space-around;
+    align-items: center;
+    /* border: red solid 2px; */
+}
+
+.conte-foot h2{
+    font-size: 2.5rem;
+    /* border: 2px solid red; */
+}
+
+.conte-foot p{
+    width: 70%;
+    font-size: 1.5rem;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+.conte-foot button{
+    outline: none;
+    border: none;
+    padding: 1.2rem;
+    color: var(--negro);
+    font-weight: bolder;
+    background-color: var(--verde);
+    margin-bottom: 2rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+    height: 15rem;
+    width: 60%;
+    /* border: 2px solid red; */
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: end; */
+    /* border: red solid 2px; */
+    width: 50%;
+}
+.social div{
+    /* border: red solid 2px; */
+    /* width: 30%; */
+}
+
+@media (min-width:758px) {
+  .top{
+    padding-left: 10%;
+    padding-right: 10%;
+    border: red solid 2px;
+  }
+  .top a{
+    font-size: 2rem;
+  }
+
+  .hero h1{
+    border: red solid 2px;
+    font-size: 6rem;
+    width: 30%;
+  }
+}
